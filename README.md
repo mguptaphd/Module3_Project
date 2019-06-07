@@ -9,13 +9,13 @@ The full database, which is made available to the public through the [Montgomery
 
 ## Central Questions That Guided the Current Investigation:
 
-1) Are Black and Hispanic drivers being issued citations at equal rates for failing to display a registration card?
+* Are Black and Hispanic drivers being issued citations at equal rates for failing to display a registration card?
 
-2) Are White and Black drivers being issued citations at equal rates?
+* Are White and Black drivers being issued citations at equal rates?
 
-3) When comparing different racial groups (Black vs. White), is there a difference in the rate at which male vs. female drivers in each of these groups are being issued citations? 
+* When comparing different racial groups (Black vs. White), is there a difference in the rate at which male vs. female drivers in each of these groups are being issued citations? 
 
-4) Is car color related to car accidents?
+* Is car color related to car accidents?
 
 
 ## Hypothesis-Testing:
@@ -32,13 +32,13 @@ Out of 1000 repeated tests, the null hypothesis was rejected 70 times (7.0%) at 
 
 #### H0) For drivers pulled over, there is no difference by race and gender in the proportional rate at which they are given a citation.
 
-- comparing Black male vs. White male drivers: out of 1000 repeated tests, the null hypothesis was rejected 557 times (55.7%) at an alpha level of 0.05.
+* comparing Black male vs. White male drivers: out of 1000 repeated tests, the null hypothesis was rejected 557 times (55.7%) at an alpha level of 0.05.
 
-- comparing White female vs. Black female drivers: Out of 1000 repeated tests, the null hypothesis was rejected 232 times (23.2%) at an alpha level of 0.05.
+* comparing White female vs. Black female drivers: Out of 1000 repeated tests, the null hypothesis was rejected 232 times (23.2%) at an alpha level of 0.05.
 
-- comparing Black male vs. Black female drivers:  Out of 1000 repeated tests, the null hypothesis was rejected 52 times (5.2%) at an alpha level of 0.05.
+* comparing Black male vs. Black female drivers:  Out of 1000 repeated tests, the null hypothesis was rejected 52 times (5.2%) at an alpha level of 0.05.
 
-- comparing White male vs. White female drivers: Out of 1000 repeated tests, the null hypothesis was rejected 948 times (94.8%) at an alpha level of 0.05.
+* comparing White male vs. White female drivers: Out of 1000 repeated tests, the null hypothesis was rejected 948 times (94.8%) at an alpha level of 0.05.
  
 #### H0) The color of a car is not related to that car being in an accident.
 
