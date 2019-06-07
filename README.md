@@ -44,8 +44,8 @@ While our analyses suggest that there are some racial/ethnic and gender differen
 
 ## Further Resources:
 
-[Police Data Initiative (includes a database of police departments that provide open data](https://www.policedatainitiative.org)
+[Police Data Initiative](https://www.policedatainitiative.org):(includes a database of police departments that provide public access datasets)
 
-[National Initiative for Building Community Trust and Justice](https://www.policedatainitiative.org/datasets/)
+[National Initiative for Building Community Trust and Justice](https://www.policedatainitiative.org/datasets/): a project to improve relationships and increase trust between communities and the criminal justice system 
 
 
