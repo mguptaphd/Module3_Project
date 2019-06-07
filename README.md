@@ -29,7 +29,6 @@ The results of our proportional t-test indicated that the proportion of Hispanic
 #### H2) For drivers pulled over, there is no difference in the proportion of White vs. Black drivers who are given a citation.
 
 The results of our proportional t-test indicated that the proportion of Black drivers who have been issued citations after being pulled over is significantly higher than White drivers. 
-To test this hypothesis, we drew random samples of White (n = 5000) and Black (n = 5000) drivers 100 times from our full dataset, and then conducted a proportional t-test to compare citation rates for White vs. Black drivers.  
 
 #### H3) For drivers pulled over, there is no difference by race and gender in the proportional rate at which they are given a citation.
 
