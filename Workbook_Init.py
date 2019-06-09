@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import sqlite3        # for importing the .db file
@@ -10,7 +10,9 @@ import numpy as np    # for arrays
 import statsmodels.api as sm  # for proportion z-tests
 from scipy.stats import chisquare  # for chi-squared tests
 from scipy.stats import chi2_contingency
+import warnings
 
+from scipy.stats import ttest_ind_from_stats  # for overall t-test
 
 import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -147,11 +149,39 @@ def sample_from_traffic_3(n_sample, connection, filters={}, show_SQL=True):
 # In[6]:
 
 
-def print_test_results(p_list, null_hyp, alpha=0.05):
+def print_repeated_test_results(p_list, null_hyp, alpha=0.05):
     num_reject = sum(np.array(p_list) < alpha)
     n = len(p_list)
     print("H0: {}\n".format(null_hyp))
     print("Out of {0} repeated tests, the null hypothesis was rejected {1} times ({2:.1%}) at an alpha level of {3}.".format(n, num_reject, num_reject/n, alpha))
+
+
+# In[3]:
+
+
+def sampleprops_to_ttest(mu_list_1, mu_list_2, equal_var=False):
+    mu_1 = np.mean(mu_list_1)
+    mu_2 = np.mean(mu_list_2)
+
+    n_1 = len(mu_list_1)
+    n_2 = len(mu_list_2)
+
+    std_1 = np.sqrt(mu_1 * (1-mu_1) / n_1)
+    std_2 = np.sqrt(mu_2 * (1-mu_2) / n_2)
+
+    return ttest_ind_from_stats(mu_1, std_1, n_1, mu_2, std_2, n_2, equal_var=equal_var)
+
+
+# In[5]:
+
+
+def print_test_results(p_value, null_hyp, alpha=0.05):
+    print("H0: {}\n".format(null_hyp))
+    print("Results: p-value = {}\n".format(p_value))
+    if p_value < alpha:
+        print("Null hypothesis rejected at alpha = {} level.".format(alpha))
+    else:
+        print("Fail to reject null hypothesis at alpha = {} level.".format(alpha))
 
 
 # In[ ]:
